@@ -3,8 +3,7 @@
 Se desea tener una página principal dónde leer las predicciones para los distintos signos del horóscopo
 El equipo de backend desarrolló la API correspondiente para ser consumida desde el front-end
 ### User Story
-Como desarrollador 
-Desarrollar una aplicación web para mostrar una landing con datos del horóscopo.
+Como usuario quiero poder leer los datos del horóscopo.
 #### Criterios de aceptación
 - El usuario debe poder ver el horóscopo de todos los signos
 - El usuario debe poder filtrar por signo
