@@ -1,6 +1,6 @@
 # Landing Horóscopo
 ## Objetivo:
-Se desea tener una página principal dónde leer las predicciones para los distintos signos del horóscopo
+Se desea tener una página principal dónde leer las predicciones para los distintos signos del horóscopo.
 El equipo de backend desarrolló la API correspondiente para ser consumida desde el front-end
 ### User Story
 Como usuario quiero poder leer los datos del horóscopo.
