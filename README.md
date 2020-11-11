@@ -18,5 +18,8 @@ Como usuario quiero poder leer los datos del horóscopo.
 - El código debe ser pusheado en un repositorio propio privado, no debe compartirse en otro medio público. Al finalizar el ejercicio dar acceso al repositorio a jpalmaschl@artear.com
 ### Servidor
 Instalar las dependencias del proyecto y ejecutar el script start
+Luego se pueden obtener los datos de la siguiente forma:
+- obtener todos los datos: http://localhost:3001/zodiac_signs
+- obtener un dato a partir de un par (key,value): localhost:3001/zodiac_signs?key=value
 ### API
 La API posee una validación de las peticiones mediante el envío del header "Authorization" cuyo valor debe ser "qazwsx"
