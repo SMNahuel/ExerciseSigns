@@ -25,7 +25,7 @@ Luego se pueden obtener los datos de la siguiente forma:
 Para más información consultar https://github.com/typicode/json-server
 ### API
 La API posee una validación de las peticiones mediante el envío del header "Authorization" cuyo valor debe ser "qazwsx"
-### Bonus: una o más de las siguientes
+## Bonus: una o más de las siguientes
 - Unit Testing
 - TDD 
 - Framework CSS
