@@ -11,7 +11,7 @@ Como usuario quiero poder leer los datos del horóscopo.
 - El usuario debe poder elegir el formato de la vista, las opciones son: lista o grilla.
 - El primer elemento de la lista o grilla es el horóscopo del día actual y debe mostrarse destacado.
 ## Guidelines
-- La aplicación debe ser desarrollada en React JS, Vue JS o Angular/AngularJS 
+- La aplicación debe ser desarrollada en React JS
 - Se proveen los wireframes de las distintas visualizaciones
 - Detallar todo lo asumido para el desarrollo de está aplicación
 - Se pueden usar librerías externas en caso de considerarlo necesario
