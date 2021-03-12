@@ -15,7 +15,7 @@ Como usuario quiero poder leer los datos del horóscopo.
 - Se proveen los wireframes de las distintas visualizaciones
 - Detallar todo lo asumido para el desarrollo de está aplicación
 - Se pueden usar librerías externas en caso de considerarlo necesario
-- El código debe ser pusheado en un repositorio propio privado, no debe compartirse en otro medio público. Al finalizar el ejercicio dar acceso al repositorio a jpalmaschl@artear.com
+- El código debe ser pusheado en un repositorio propio privado, no debe compartirse en otro medio público. Al finalizar el ejercicio darnos acceso al repositorio
 ### Servidor
 Instalar las dependencias del proyecto y ejecutar el script start.
 Luego se pueden obtener los datos de la siguiente forma:
