@@ -1,14 +1,14 @@
 # Primeros pasos 
 
-## npm i 
+- npm i 
 
-## npm run start
+- npm run start
 
 # Herramientas usadas
 
 - Context
 - Material UI
-
+- Axios
 
 # Diagrama explicativo de los componentes 
 
