@@ -4,6 +4,11 @@
 
 ## npm run start
 
+# Herramientas usadas
+
+- Context
+- Material UI
+
 
 # Diagrama explicativo de los componentes 
 
