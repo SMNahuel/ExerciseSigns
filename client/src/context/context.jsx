@@ -29,12 +29,14 @@ export const ContextProvider = ({ children }) => {
         const today = date.getDate();
         const month = date.getMonth() + 1;
 
-        sign && sign.map((item) => {
-            if (transform(today, month, item.init_date) || transform2(today, month, item.end_date)) {
-                setSelect(item);
-                return item;
-            }
-        })
+        if (sign) {
+            const result = sign.filter((item) => {
+                if (transform(today, month, item.init_date) || transform2(today, month, item.end_date)) {
+                    return item;
+                }
+            })
+            setSelect(result[0]);
+        }
     }
 
     const onSelectCard = (cardSelect) => {
@@ -48,7 +50,9 @@ export const ContextProvider = ({ children }) => {
             setSearch(false)
         }
 
-        const aux = dataCache.filter(item => item.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(value.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")))
+        const aux = dataCache.filter(item => 
+            item.name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").includes(value.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""))
+        )
         setData(aux);
     }
 
@@ -70,8 +74,8 @@ export const ContextProvider = ({ children }) => {
         const aux = data.sort(function (a, b) {
             let y = b.init_date.split("-");
             let x = a.init_date.split("-");
-            if (Number(x[1]) > Number(y[1])) { return type ==="Asc" ? 1 : -1 ; }
-            if (Number(x[1]) < Number(y[1])) { return type ==="Asc" ? -1 : 1 ; }
+            if (Number(x[1]) > Number(y[1])) { return type === "Asc" ? 1 : -1; }
+            if (Number(x[1]) < Number(y[1])) { return type === "Asc" ? -1 : 1; }
             return 0;
         });
         setDataOrder({

@@ -4,12 +4,13 @@ import Grid from '../../components/Grid';
 import SearchBar from '../../components/SearchBar';
 import CardSelect from '../../components/Select/select';
 import { Context } from "../../context/context";
-
+import Button from '@mui/material/Button';
 
 const Principal = () => {
 
     const { data, select, search, onOrder, signToday, onOrderMonth } = useContext(Context);
     const [signos, setSignos] = useState(data);
+
 
     useEffect(() => {
         setSignos(data)
@@ -21,18 +22,18 @@ const Principal = () => {
             <h1 style={{ display: "flex", justifyContent: "center" }}>Horóscopo</h1>
             <div style={{ display: "flex", flexDirection: "row", justifyContent: "space-around", alignItems: "center" }}>
                 <Filter />
-                <button type="button" onClick={() => onOrder("AZ")}>
+                <Button variant="contained" onClick={() => onOrder("AZ")}>
                     A-Z
-                </button>
-                <button type="button" onClick={() => onOrder("ZA")}>
+                </Button>
+                <Button variant="contained" onClick={() => onOrder("ZA")}>
                     Z-A
-                </button>
-                <button type="button" onClick={() => onOrderMonth("Asc")}>
+                </Button>
+                <Button variant="contained" onClick={() => onOrderMonth("Asc")}>
                     Ene-Dic
-                </button>
-                <button type="button" onClick={() => onOrderMonth("Desc")}>
+                </Button>
+                <Button variant="contained" onClick={() => onOrderMonth("Desc")}>
                     Dic-Ene
-                </button>
+                </Button>
                 <SearchBar />
             </div>
             <>
@@ -45,9 +46,7 @@ const Principal = () => {
                         :
                         <>
                             {
-
                                 <Grid data={signos} />
-
                             }
                         </>
                 }
